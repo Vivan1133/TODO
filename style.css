@@ -1,0 +1,125 @@
+:root {
+  --body-background: #011F26;
+  --btn-primary: #1bcfbd;
+}
+
+* {
+  box-sizing: border-box; 
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--body-background);
+}
+
+.container {
+    background-color: #708888;
+    max-width: 600px;
+    margin: 0 auto;
+    
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+h1 {
+   text-align: center;
+   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   color: #1bcfbd;
+}
+
+#todoInput {
+    width: 75%;
+    padding: 10px;
+    margin-right: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    border: none;
+    background-color: #e6e6e6;
+}
+
+#addTodo {
+    padding: 10px 20px;
+    background-color: var(--btn-primary);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+#addTodo:hover {
+  background-color: #38e7d5;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  padding: 10px;
+  border-bottom: 1px solid #011F26;
+  color: #011F26;
+}
+
+li:hover {
+  background-color: #b4b4b4;
+  border-radius: 5px;
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+.filterBtn, .editBtn, .completeBtn, .deleteBtn {
+  margin-left: 6px;
+  padding: 6px 18px;
+  margin-top: 5px;
+  border: none;
+  border-radius: 4px;
+  background-color: #69c165;
+  color: #011F26;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.editBtn{
+  background-color: #3a61f0;
+}
+.editBtn:hover {
+  background-color: #6989fb;
+}
+
+.deleteBtn {
+  background-color: #b65f5f;
+}
+.deleteBtn:hover {
+  background-color: #e34040;
+}
+
+.completeBtn {
+  background-color: #22982e;
+}
+.completeBtn:hover {
+  background-color: #45c652;
+}
+
+
+.filterBtn:hover {
+  background-color: #3e843a
+}
+.filterBtn:first-child {
+  margin-left: 0;
+}
+
+.todoItem {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.completed {
+  text-decoration: line-through;
+}
